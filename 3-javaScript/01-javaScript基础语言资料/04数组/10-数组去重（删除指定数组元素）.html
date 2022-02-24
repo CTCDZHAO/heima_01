@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+  // 将数组[2, 0, 6, 1, 77, 0, 52, 0, 25, 7]中的 0 去掉后，形成一个不包含 0 的新数组。
+//1\需要一个新数组用于存放筛选之后的数据
+//  2.遍历原来的数组 ，把不是0的数据添加到新的数组里面
+//  3.新数组里面的个数，用length不断累加
+  var arr = [2, 0, 6, 1, 77, 0, 52, 0, 25, 7];
+  var newArr=[];
+  for (var i=0;i<arr.length;i++){
+    if (arr[i]!==0){
+      newArr[newArr.length]=arr[i];
+    }
+  }
+  console.log(newArr);
+</script>
+</body>
+</html>

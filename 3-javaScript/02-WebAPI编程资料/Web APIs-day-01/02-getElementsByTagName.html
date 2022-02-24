@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<ul>
+  <li>sdafjks
+  <li>sdafjks</li>
+  <li>sdafjks</li>
+  <li>sdafjks</li>
+  <li>sdafjks</li>
+</ul>
+<ol id="ol">
+  <li>sadfasd</li>
+  <li>sadfasd</li>
+  <li>sadfasd</li>
+  <li>sadfasd</li>
+</ol>
+<script>
+  //1\返回的是获取过来元素对象的集合  ，以伪数组的形式储存的
+  var lis = document.getElementsByTagName('li');
+  console.log(lis);
+  console.log(lis[0]);
+  //2.我们想要依次打印里面的元素对象，可以采用遍历的方式
+  for(var i=0;i<lis.length;i++){
+    console.log(lis[i]);
+  }
+</script>
+
+</body>
+</html>

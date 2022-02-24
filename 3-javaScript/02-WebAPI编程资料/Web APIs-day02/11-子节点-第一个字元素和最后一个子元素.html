@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<ol>
+  <li>我是li1</li>
+  <li>我是li2</li>
+  <li>我是li3</li>
+  <li>我是li4</li>
+  <li>我是li5</li>
+</ol>
+<script>
+var ol = document.querySelector('ol');
+//1.firstChild第一个子节点不管是文本节点还是元素节点
+console.log(ol.firstChild);
+console.log(ol.lastChild);
+//2.firstelementchild 返回第一个子元素节点 ie9才支持
+console.log(ol.firstElementChild);
+console.log(ol.lastElementChild);
+//3.开发中实际的写法 既没有兼容问题 又返回第一个子元素
+console.log(ol.children[0]);
+console.log(ol.children[ol.children.length-1]);
+</script>
+</body>
+</html>

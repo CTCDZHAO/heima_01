@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script src="../jquery.min.js"></script>
+</head>
+<body>
+<ul>
+    <li>以色侍人，色衰而爱驰也;以才侍人，才进得久，互赏而终...</li>
+    <li>以色侍人，色衰而爱驰也;以才侍人，才进得久，互赏而终...</li>
+    <li>以色侍人，色衰而爱驰也;以才侍人，才进得久，互赏而终...</li>
+    <li>以色侍人，色衰而爱驰也;以才侍人，才进得久，互赏而终...</li>
+    <li>以色侍人，色衰而爱驰也;以才侍人，才进得久，互赏而终...</li>
+    <li>以色侍人，色衰而爱驰也;以才侍人，才进得久，互赏而终...</li>
+    <li>以色侍人，色衰而爱驰也;以才侍人，才进得久，互赏而终...</li>
+</ul>
+<script>
+    //隔行变色
+    fn();
+    //鼠标经过高亮显示
+    $(function (){
+        $('ul li').mousemove(function (){
+            fn();
+            $(this).css("background","red");
+        })
+        //隔行变色
+        function fn(){
+            $("ul li:odd").css("background","skyblue");
+            $("ul li:even").css('background','yellowgreen');
+        }
+    })
+</script>
+</body>
+</html>

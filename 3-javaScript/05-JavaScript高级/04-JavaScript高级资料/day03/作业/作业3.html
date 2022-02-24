@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<button id="btn1">赞（1）</button>
+<button id="btn2">赞（1）</button>
+<button id="btn3">赞（1）</button>
+<button id="btn4">赞（1）</button>
+<script>
+  //闭包缓存数据
+  function getValue(){
+    var value = 2;
+    return function (){
+      this.innerHTML  ="赞("+(value++)+")";
+    }
+  }
+  var btnObjects = document.querySelectorAll('button');
+  for (var i=0;i<btnObjects.length;i++){
+    btnObjects[i].onclick = getValue();
+  }
+</script>
+</body>
+</html>

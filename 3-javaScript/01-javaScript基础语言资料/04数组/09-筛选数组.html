@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+// <!--    将数组[2, 0, 6, 1, 77, 0, 52, 0, 25, 7]
+//1.声明一个新的数组用于存放新数据newArr
+//2。遍历原来的旧数组，找出大于等于10的元素
+//3、依次追加给新的数组newArr
+var arr = [2, 0, 6, 1, 77, 0, 52, 0, 25, 7];
+var newArr=[];
+var j=0;
+for(var i=0;i<arr.length;i++){
+    if(arr[i]>=10){
+        newArr[j]=arr[i];
+        j++;
+    }
+}
+console.log(newArr);
+//方法2、
+var arr = [2, 0, 6, 1, 77, 0, 52, 0, 25, 7];
+var newArr=[];
+//刚开始newArr.length就是0；
+for(var i=0;i<arr.length;i++){
+    if(arr[i]>=10){
+        newArr[newArr.length]=arr[i];
+
+    }
+}
+console.log(newArr);
+</script>
+
+</body>
+</html>

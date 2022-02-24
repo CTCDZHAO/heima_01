@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+  <style>
+    img {
+      position: absolute;
+      top: 2px;
+    }
+  </style>
+</head>
+<body>
+  <img src="images/angel.gif" alt="">
+  <script>
+  var pic = document.querySelector('img');
+  document.addEventListener('mousemove',function (e){
+  //  1.mouseover只要我们的鼠标移动1px就会触发这个事件
+  //   console.log(1);
+  //2.核心原理：每次移动鼠标  我们都会获得最新的鼠标坐标，把这个X和Y坐标的top和left  值就可以移动图片
+    var x= e.pageX;
+    var y = e.pageY;
+    console.log('x的坐标是'+x,'y的坐标是'+y);
+  //  3。千万不要忘记left和top添加px单位
+    pic.style.left = x+'px';
+    pic.style.top = y+'px';
+  });
+</script>
+</body>
+</html>

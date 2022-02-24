@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<div>123</div>
+<script>
+  //事件对象
+  var div = document.querySelector('div');
+  // div.onclick = function (){
+  //   // console.log(e);
+  //   // console.log(window.event);
+  //   // e= e || window.event;
+  //   console.log(e);
+  // }
+  div.addEventListener('click',function (e){
+    console.log(e);
+  })
+//  1.event 就是一个事件对象 写到我们倾听函数的小括号 里面当形参来看
+//  2.事件对象只有  有了事件之后才存在  它是系统给我们自动创建的，不需要传参
+//  3.事件对象   是 我们事件的一系列相关联数据的集合  跟事件相关   比如鼠标点击里面就包含了鼠标的相关信息   鼠标坐标啊， 如果是键盘事件里面就包含键盘事件
+//
+//  4、这个事件对象我们可以自己命名 比如event 、evt、e
+//  5.事件对象也有兼容性问题   ie678 通过window。event兼容写法
+</script>
+</body>
+</html>

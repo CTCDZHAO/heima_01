@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <script src="jquery.min.js"></script>
+</head>
+
+<body>
+<button>快速</button>
+<button>快速</button>
+<button>快速</button>
+<button>快速</button>
+<button>快速</button>
+<button>快速</button>
+<button>快速</button>
+<script>
+    $(function (){
+        $("button").click(function (){
+            $(this).css("color", "red");
+            //让其余元素不变色
+            // $(this).siblings().css("color","");
+//链式编程
+            $(this).css("color",'red').siblings().css("color","");
+        })
+    })
+</script>
+</body>
+
+</html>
